@@ -114,12 +114,21 @@
   margin-right: -1px;
   font-family: '微软雅黑';
 }
+.timeDayActive{
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  border-top: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  margin-right: -1px;
+  font-family: '微软雅黑';
+  background-color: #4EA3E7;
+}
 .active{
   font-weight: bold;
   color: #ffffff;
   background-color: #4EA3E7;
-  background-image: url('../../images/dui.png');
-  background-repeat:no-repeat;
 }
 .bookSelect{
   width: 10px;

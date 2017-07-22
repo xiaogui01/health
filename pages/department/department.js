@@ -1,8 +1,7 @@
-//logs.js
+
 var util = require('../../utils/util.js')
 Page({
   data: {
-    logs: [],
     searchHos:'',
     department_name: ''
   },
