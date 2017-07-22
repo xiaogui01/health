@@ -1,8 +1,8 @@
-//logs.js
+
 var util = require('../../utils/util.js')
 Page({
   data: {
-    logs: []
+    
   },
   bindRec: function () {
     wx.navigateTo({

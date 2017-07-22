@@ -1,4 +1,4 @@
-//logs.js
+
 var util = require('../../utils/util.js')
 Page({
   data: {
@@ -22,7 +22,7 @@ Page({
         return util.formatTime(new Date(log))
       }),
       date: util.formatTime(new Date)
-    })
+    });
     wx.request({
       url: 'http://zxd.iwei7.com/scheduledates',
       method: 'GET',
