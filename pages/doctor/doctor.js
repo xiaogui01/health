@@ -16,18 +16,15 @@ Page({
     console.log(e)
   },
   onLoad: function () {
+
     var that = this;
-    that.setData({
-      logs: (wx.getStorageSync('logs') || []).map(function (log) {
-        return util.formatTime(new Date(log))
-      }),
-      date: util.formatTime(new Date)
-    })
+
+
     wx.request({
       url: 'http://zxd.iwei7.com/scheduledates',
       method: 'GET',
       success: function (res) {
-        // console.log(res.data.data.schedule_date)
+        // console.log(res.data.data.doctor_photo)
         // console.log(res)
         if (res.data.code == 200) {
           that.setData({
@@ -35,7 +32,20 @@ Page({
           })
         }
       }
+    });
+    wx.request({
+      url: 'http://zxd.iwei7.com/nums',
+      method: 'GET',
+      success: function (res) {
+        if (res.data.code == 200) {
+          that.setData({
+            result1: res.data.data.scheduling
+          })
+        }
+      }
     })
+
+
   },
   listenerButton: function () {
   }

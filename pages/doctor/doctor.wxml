@@ -20,15 +20,15 @@
   
   <view class="book_doctor">
 
-    <view class="line_d" bindtap="bindDoctor">
+    <view wx:for="{{result1}}" wx:for-index="idx" wx:for-item="itemName" class="line_d" bindtap="bindDoctor">
 
      <view class="line_dn">
       <view class="bookImg">
-      <image class="book_img" src="{{icond}}"></image>
+      <image class="book_img" src="{{itemName.doctor_photo}}"></image>
       </view>
       <view class="bookDn">
-        <view class="book_dn"><text>{{text_d1}}</text></view>
-        <view class="book_dn"><text>{{text_d1_1}}</text></view>
+        <view class="book_dn"><text>{{itemName.doctor_name}}</text></view>
+        <view class="book_dn"><text>{{itemName.department_name}}</text></view>
       </view>
      </view>
 
