@@ -11,13 +11,13 @@
       </view>
   </view>
 </view>
- <view class="timeH">今天日期：{{date}}</view> 
-    <view class="book_time">
-      <view wx:for="{{result}}" wx:for-index="idx" wx:for-item="itemName" bindtap="bindActive" class="timeDay">
+ <view class="timeH">今天日期：{{date}}</view>
+	  <view class="book_time">
+      <view class="{{timeDayIndex==index?'timeDayActive':'timeDay'}}" bindtap="bindActive" data-datasetindex="{{index}}" data-abc="123" wx:for="{{result}}" wx:for-item="itemName">
         <text>{{itemName.rq}}</text>日<text>{{itemName.times}}</text>
       </view>
     </view>
-  
+
   <view class="book_doctor">
 
     <view class="line_d" bindtap="bindDoctor">
@@ -33,5 +33,5 @@
      </view>
 
 		</view>
-    
+
 	</view>

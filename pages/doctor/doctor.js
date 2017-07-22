@@ -5,7 +5,9 @@ Page({
     text_d1: '周亦秋',
     text_d1_1: '营养门诊',
     icond: '../../images/doct.png',
-    date: ''
+    date: '',
+    timeDay: "timeDay",
+    timeDayIndex: null
   },
   bindDoctor: function () {
     wx.navigateTo({
@@ -13,7 +15,13 @@ Page({
     })
   },
   bindActive: function (e) {
-    console.log(e)
+    const ds = e.currentTarget.dataset;
+    console.log("dataset");
+    console.log(e.currentTarget.dataset);
+    this.setData({
+      timeDayIndex: ds.datasetindex
+    });
+    console.log("timeDayIndex = " + this.data.timeDayIndex);
   },
   onLoad: function () {
     var that = this;
