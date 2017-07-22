@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="header">
+		<image class="avatar" src="{{userInfo.avatarUrl}}" />
+		<view class="nickname"> {{userInfo.nickName}}</view>
+	</view>
+	<view class="section">
+		<view class="line judgement">个人资料</view>
+		<view class="line judgement" bindtap="bindRec">预约记录</view>
+		<view class="line judgement">修改密码</view>
+		<view class="line judgement">挂号规范</view>
+    <view class="line judgement">手机绑定</view>
+	</view>
+</view>
+

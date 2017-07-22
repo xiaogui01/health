@@ -1,0 +1,45 @@
+<!--logs.wxml-->
+<view class="container">
+
+  <view class="content">
+
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL1}}</text></view>
+    <view class="bookSub_R"><text>{{textL1_1}}</text></view>
+   </view>
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL2}}</text></view>
+    <view class="bookSub_R"><text>{{textL2_2}}</text></view>
+   </view>
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL3}}</text></view>
+    <view class="bookSub_R"><text>{{textL3_3}}</text></view>
+   </view>
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL4}}</text></view>
+    <view class="bookSub_R"><text>{{textL4_4}}</text></view>
+   </view>
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL5}}</text></view>
+    <view class="bookSub_R"><text>{{textL5_5}}</text></view>
+   </view>
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL6}}</text></view>
+    <view class="bookSub_R"><text>{{textL6_6}}</text></view>
+   </view>
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL7}}</text></view>
+    <view class="bookSub_R"><text>{{textL7_7}}</text></view>
+   </view>
+   <view class="bookLine">
+    <view class="bookSub_L"><text>{{textL8}}</text></view>
+    <view class="bookSub_R"><text>{{textL8_8}}</text></view>
+   </view>
+  </view>
+
+  <view class="bookNotice">由于医院提供的预约挂号限制，请在10分钟内进行支付。</view>
+
+  <view class="bookSb">
+    <button form-type="submit"  bindtap="primary"> 确认 </button>
+  </view>
+</view>

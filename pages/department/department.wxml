@@ -1,0 +1,17 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="search flex-wrp">
+
+      <view class="search-left flex-item">
+          <image src="../../images/search.png"></image>
+          <input bindinput="depputname" placeholder="输入科室名称" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right">
+          <button bindtap="bindGet"> 搜索 </button>
+      </view>
+  </view>
+	<view class="section">
+		<view class="line" wx:for="{{result}}" wx:for-index="idx" wx:for-item="itemName"> {{itemName.department_name}}</view>
+	</view>
+</view>
+

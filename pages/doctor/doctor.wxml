@@ -1,0 +1,37 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="search flex-wrp">
+
+      <view class="search-left flex-item">
+          <image src="../../images/search.png"></image>
+          <input placeholder="输入医生姓名" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right flex-item" bindtap="">
+          <button bindtap="bindGet"> 搜索 </button>
+      </view>
+  </view>
+</view>
+ <view class="timeH">今天日期：{{date}}</view> 
+    <view class="book_time">
+      <view wx:for="{{result}}" wx:for-index="idx" wx:for-item="itemName" bindtap="bindActive" class="timeDay">
+        <text>{{itemName.rq}}</text>日<text>{{itemName.times}}</text>
+      </view>
+    </view>
+  
+  <view class="book_doctor">
+
+    <view class="line_d" bindtap="bindDoctor">
+
+     <view class="line_dn">
+      <view class="bookImg">
+      <image class="book_img" src="{{icond}}"></image>
+      </view>
+      <view class="bookDn">
+        <view class="book_dn"><text>{{text_d1}}</text></view>
+        <view class="book_dn"><text>{{text_d1_1}}</text></view>
+      </view>
+     </view>
+
+		</view>
+    
+	</view>

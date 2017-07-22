@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="header">
+		<image class="avatar" src="{{userInfo.avatarUrl}}" />
+		<view class="nickname"> {{userInfo.nickName}}</view>
+	</view>
+	<view class="doctorCon">
+		<view class="doctorIntro">医生简介</view>
+    <view class="doctorIntro_c">暂无数据</view>
+	</view>
+  <view class="doctorCon">
+		<view class="doctorIntro">医生排班</view>
+    <view class="doctorBook">2017-07-11 周二 上午
+      <button type="warn"  bindtap="bindBook"> 预约 </button>
+    </view>
+    
+    <view class="doctorMoney">挂号费：0元</view>
+    <view class="doctorMoney">诊疗费：15元</view>
+	</view>
+  
+</view>

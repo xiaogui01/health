@@ -1,0 +1,40 @@
+.content{
+  width: 90%;
+  margin: 30px auto;
+  border: 2px solid #efefef;
+  font-size: 16px;
+}
+.bookSub_L,.bookSub_R{
+  height: 46px;
+  line-height: 46px;
+  float: left;
+  font-weight: bold;
+}
+.bookSub_L{
+  width: 32%;
+  text-indent: 0.5em;
+  color: #666;
+}
+.bookLine{
+  height: 46px;
+  border-bottom: 2px solid #efefef;
+}
+.bookNotice{
+  width: 90%;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.bookSb{
+  margin: 20px 0;
+}
+.bookSb button{ 
+  width: 250px;
+  background-color: blue;
+  color: #fff;
+  font-size: 18px;
+}
+.successN{
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+}

@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/book/book",
+    "pages/doctor/doctor",
+    "pages/doctor_content/doctorCon",
+    "pages/bookSub/bookSub",
+    "pages/book_record/bookRec",
+    "pages/department/department"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "健康预约",
+    "navigationBarTextStyle": "black"
+  }
+}

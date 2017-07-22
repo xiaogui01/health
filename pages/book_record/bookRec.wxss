@@ -1,0 +1,9 @@
+.bookSuccess{
+  width: 100%;
+  text-align: left;
+}
+.successN{
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+}

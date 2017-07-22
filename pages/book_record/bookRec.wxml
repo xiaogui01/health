@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view class="container">
+
+  <view class="content">
+
+   <view class="bookSuccess">
+    <view class="successN"><text>{{textN}}</text></view>
+    <view class="successC"><text>{{textC}}</text></view>
+   </view>
+  </view>
+</view>
